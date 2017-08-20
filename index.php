@@ -34,12 +34,12 @@
 		<h1 id="logo"><a href="https://www.bludit.com">BLUDIT</a></h1>
 		<nav id="nav">
 		<ul>
-			<li><a href="#download"><?php l('Download') ?></a></li>
-			<li><a href="#demo"><?php l('Demo') ?></a></li>
+			<li><a href="https://www.bludit.com#download"><?php l('Download') ?></a></li>
+			<li><a href="https://www.bludit.com#demo"><?php l('Demo') ?></a></li>
 			<li><a href="https://docs.bludit.com"><?php l('Documentation') ?></a></li>
 			<li><a href="https://themes.bludit.com"><?php l('Themes') ?></a></li>
 			<li><a href="https://plugins.bludit.com"><?php l('Plugins') ?></a></li>
-			<li><a href="#donations"><?php l('Donations') ?></a></li>
+			<li><a href="https://www.bludit.com#donations"><?php l('Donations') ?></a></li>
 			<!-- <li><a href="https://pro.bludit.com">Bludit PRO</a></li> -->
 		</ul>
 		</nav>
