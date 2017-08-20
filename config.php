@@ -3,7 +3,7 @@ define('BLUDIT', true);
 define('DS', DIRECTORY_SEPARATOR);
 define('PATH_ROOT', __DIR__.DS);
 define('CHARSET', 'UTF-8');
-define('DOMAIN', 'http://localplugins.com');
+define('DOMAIN', 'https://plugins.bludit.com');
 define('FILES', PATH_ROOT.'files'.DS);
 
 // Language
