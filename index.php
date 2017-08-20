@@ -53,7 +53,11 @@
 			<p class="little-description"><?php l('little-description-paragraph1') ?></p>
 		</header>
 
-		<section class="style1 container">
+		<section class="container">
+			<input id="search" type="text" placeholder="Search...">
+		</section>
+
+		<section class="container">
 		<div class="row">
 
 			<?php
@@ -67,7 +71,11 @@
 
 					# Name and Description of the plugin
 					$information = json_decode(file_get_contents($languageFile), true);
-					$information = reset($information);
+					if (isset($information['plugin-data'])) {
+						$information = $information['plugin-data'];
+					} elseif (isset($information['theme-data'])) {
+						$information = $information['theme-data'];
+					}
 
 					# Metadata.json of the plugin
 					$metadata = json_decode(file_get_contents($dir.DS.'metadata.json'), true);
@@ -119,6 +127,24 @@
 		</footer>
 
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+	$("#search").on("keyup", function() {
+		var textToSearch = $(this).val().toLowerCase();
+		console.log(textToSearch);
+		$(".box p.title, .box p.description").each( function() {
+			var element = $(this).text().toLowerCase();
+			if (element.indexOf(textToSearch)!=-1) {
+				$(this).parent().parent().show();
+			} else {
+				$(this).parent().parent().hide();
+			}
+		});
+	});
+});
+</script>
 
 </body>
 </html>
