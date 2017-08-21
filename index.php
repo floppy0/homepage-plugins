@@ -93,7 +93,7 @@
 
 				foreach ($tmp as $box) {
 					echo '
-					<div class="6u 12u(narrower)">
+					<div class="box-wrapper 6u 12u(narrower)">
 					<section class="box">
 						<p class="title">'.$box['name'].'</p>
 						<p class="author">'.$box['author'].'</p>
@@ -141,14 +141,12 @@
 <script>
 $(document).ready(function() {
 	$("#search").on("keyup", function() {
+		$("div.box-wrapper").hide();
 		var textToSearch = $(this).val().toLowerCase();
-		console.log(textToSearch);
-		$(".box p.title, .box p.description").each( function() {
+		$("p.title, p.description").each( function() {
 			var element = $(this).text().toLowerCase();
 			if (element.indexOf(textToSearch)!=-1) {
 				$(this).parent().parent().show();
-			} else {
-				$(this).parent().parent().hide();
 			}
 		});
 	});
