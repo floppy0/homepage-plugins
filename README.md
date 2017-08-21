@@ -1,5 +1,5 @@
 # Bludit Plugins Homepage
-This repository contains the files of the official website of Bludit Plugins.
+This repository contains the files of the website Bludit Plugins.
 Feel free to create a pull request with improves, languages translations, etc.
 
 English:
