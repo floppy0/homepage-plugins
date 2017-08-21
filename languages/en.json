@@ -1,5 +1,5 @@
 {
-	"head-title": "Plugins | Bludit",
+	"head-title": "Themes | Bludit",
 	"head-description": "Extend Bludit functionality with amazing plugins. Social networks, HTML Editors, Customize CSS, RSS Feed, Sitemap, Open Graph, Twitter Cards, and more.",
 	"little-description-paragraph1": "<b>Extend</b> Bludit functionality with <b>amazing</b> plugins",
 	"demo": "Demo",
@@ -8,10 +8,10 @@
 	"themes": "Themes",
 	"plugins": "Plugins",
 	"donate": "Donate",
-	"donations": "Donations",
 	"support": "Support",
 	"chat": "Chat",
 	"forum": "Forum",
 	"download": "Download",
+	"search": "Search",
 	"bludit-license": "Bludit is released under the <a href=\"https://tldrlegal.com/license/mit-license\">MIT license</a>"
 }
